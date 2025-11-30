@@ -1,31 +1,6 @@
-cod, name, price, unit
-001, Apple, 0.50, kg
-002, Banana, 0.30, kg
-003, Orange, 0.80, kg
-004, Milk, 1.20, liter
-005, Bread, 1.00, unit
-006, Eggs, 2.50, dozen
-007, Cheese, 3.00, kg
-008, Chicken, 5.00, kg
-009, Rice, 0.90, kg
-010, Pasta, 1.10, kg
-011, Tomato, 0.70, kg
-012, Potato, 0.40, kg
-013, Onion, 0.60, kg
-014, Carrot, 0.55, kg
-015, Lettuce, 0.80, unit
-016, Cucumber, 0.75, kg
-017, Yogurt, 0.90, unit
-018, Butter, 2.20, kg
-019, Coffee, 4.00, kg
-020, Tea, 3.50, kg
-021, Sugar, 0.85, kg
-022, Salt, 0.50, kg
-023, Pepper, 1.50, kg
-024, Olive Oil, 6.00, liter
-025, Vinegar, 2.00, liter
-026, Chicken Breast, 7.00, kg
-027, Fish, 8.00, kg
-028, Shrimp, 10.00, kg
-029, Flour, 1.20, kg
-030, Cornmeal, 1.30, kg
+cod,name,price,unit
+001,Apple,0.8,unit
+025,Orange,1.5,bag
+026,Grape,5.0,kilo
+031,Watermelon,10.0,unit
+030,Banana,1.2,15
