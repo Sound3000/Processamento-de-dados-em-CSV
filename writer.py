@@ -47,22 +47,22 @@ def get_root_product(
 
                 # Lógica de busca: O produto é adicionado se *qualquer* # um dos parâmetros corresponder.
                 match = False
-                if id is not None and row['cod'] == id:
+                if id is not None and row['id'] == id:
                     match = True
                 if name is not None and row['name'] == name:
                     match = True
                 if price is not None and prod_price_float == price:
                     match = True
-                if quantity is not None and row['unit'] == quantity:
+                if quantity is not None and row['quantity'] == quantity:
                     match = True
                 
                 if match:
                     # Armazena os dados do produto encontrado
                     list_products.append({
-                        "id": row['cod'],
+                        "id": row['id'],
                         "name": row['name'],
                         "price": prod_price_float,
-                        "quantity": row['unit']
+                        "quantity": row['quantity']
                     })
 
     except FileNotFoundError:
@@ -100,9 +100,9 @@ def add_root_product(
                 # adcionar um cabeçalho se o arquivo estiver vazio
                 if os.path.getsize(CSV_FILE) == 0:
                     writer = csv.writer(file)
-                    writer.writerow(["cod", "name", "price", "unit"])
+                    writer.writerow(["id", "name", "price", "quantity"])
                 # Verifica se o ID ou Nome já existem
-                if row['cod'] == id:
+                if row['id'] == id:
                     return f"Erro: Produto com ID '{id}' já existente!\n"
                 # A verificação de duplicidade deve ser feita apenas 
                 # para campos que *devem* ser únicos (ID e Nome são típicos)
@@ -121,7 +121,7 @@ def add_root_product(
             # adcionar um cabeçalho se o arquivo estiver vazio
             if os.path.getsize(CSV_FILE) == 0:
                 writer = csv.writer(file)
-                writer.writerow(["cod", "name", "price", "unit"])
+                writer.writerow(["id", "name", "price", "quantity"])
             # Usa csv.writer para garantir que o formato CSV seja correto
             writer = csv.writer(file)
             # Escreve a nova linha com os dados do produto

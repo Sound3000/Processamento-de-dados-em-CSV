@@ -1,4 +1,4 @@
-cod,name,price,unit
+id,name,price,quantity
 001,Apple,0.8,unit
 025,Orange,1.5,bag
 026,Grape,5.0,kilo
